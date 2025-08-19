@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "/testNew": {},
+    "/testNew/actors": {},
+    "/testNew/categories": {},
+    "/testNew/directors": {},
+    "/testNew/history": {},
+    "/testNew/home": {},
+    "/testNew/login": {},
+    "/testNew/register": {}
+  }
+}

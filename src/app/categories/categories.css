@@ -1,0 +1,49 @@
+.category-card {
+ 
+  cursor: pointer;
+}
+
+.category-card img {
+  transition: transform 0.4s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.category-card:hover .overlay {
+  opacity: 1;
+}
+
+.star {
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.star:hover,
+.star.filled {
+  color: gold;
+}
+
+
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff4d4d; 
+}
+
+footer p {
+  margin: 0;
+}

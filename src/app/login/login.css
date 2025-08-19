@@ -1,0 +1,43 @@
+.card {
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffffff, #f7f7f7);
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 30px rgba(255, 193, 7, 0.4);
+}
+
+.btn-warning:hover {
+  background-color: #e0a800 !important;
+  color: #fff !important;
+}
+
+input.form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+input.form-control:focus {
+  border-color: #ff9800;
+  box-shadow: 0 0 5px rgba(255, 152, 0, 0.6);
+}
+
+
+
+
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff4d4d; 
+}
+
+footer p {
+  margin: 0;
+}
+

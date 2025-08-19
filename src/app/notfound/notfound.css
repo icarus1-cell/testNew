@@ -1,0 +1,26 @@
+i{
+
+    font-size: 70px;
+    position: relative;
+    left: 47%;
+    margin-top: 50px;
+}
+
+div{
+    margin-top: 100px;
+}
+
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff4d4d; 
+}
+
+footer p {
+  margin: 0;
+}

@@ -1,0 +1,33 @@
+.card {
+  min-height: 450px; 
+}
+
+.card-img-top {
+  height: 320px; 
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff4d4d; 
+}
+
+footer p {
+  margin: 0;
+}

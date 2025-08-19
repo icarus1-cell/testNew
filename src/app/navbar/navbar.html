@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-lg navbar-dark cinematic-navbar shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-warning"
+   [routerLink]="login ? ['/home'] : ['/login']"
+   routerLinkActive="active">
+  CINEMATIC <i class="fa-solid fa-film ms-1"></i>
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+   
+
+
+
+
+
+
+
+
+
+    
+    <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="login" *ngIf="!login">
+            <i class="fa-solid fa-right-to-bracket me-1"></i> Login
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" *ngIf="login" routerLink="home">
+            <i class="fa-solid fa-house me-1"></i> Home
+          </a>
+        </li>
+        
+        <li class="nav-item" *ngIf="login">
+          <a class="nav-link" routerLink="actors">
+            <i class="fa-solid fa-users me-1"></i> Actors
+          </a>
+        </li>
+
+
+        <li class="nav-item" *ngIf="!login">
+          <a class="nav-link" routerLink="register">
+            <i class="fa-solid fa-users me-1"></i> register
+          </a>
+        </li>
+
+        <li class="nav-item" *ngIf="login">
+          <a class="nav-link" routerLink="categories">
+            <i class="fa-solid fa-list me-1"></i> Categories
+          </a>
+        </li>
+       
+        <li class="nav-item" *ngIf="login">
+          <a class="nav-link" routerLink="directors">
+            <i class="fa-solid fa-video me-1"></i> Directors
+          </a>
+        </li>
+
+        <li class="nav-item" *ngIf="login">
+          <a class="nav-link" routerLink="history">
+            <i class="fa-solid fa-clock-rotate-left me-1"></i> History
+          </a>
+        </li>
+
+        
+
+
+
+       
+      </ul>
+
+      <button class="btn btn-danger ms-lg-3 fw-bold" *ngIf="login" (click)="logOut()">
+        <i class="fa-solid fa-arrow-right-from-bracket me-1"></i> Log Out
+      </button>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,152 @@
+<div class="para">
+    <p class="my-5">Hollywood actors, especially during the golden age of cinema and the decades that followed, played a major role in shaping the identity and global influence of the American film industry. From the mid-20th century onward, performers became more than just characters on screen—they became cultural icons, setting trends, reflecting societal values, and often challenging them. This era saw the rise of charismatic leading men and women who brought intensity, depth, and complexity to their roles, influencing generations of audiences and aspiring actors alike. Whether in classic dramas, westerns, thrillers, or action films, these actors helped define entire genres and contributed to the enduring legacy of Hollywood as the heart of global cinema. Their performances not only entertained but also reflected the evolving attitudes, struggles, and dreams of society through the art of storytelling.</p>
+</div>
+<hr>
+<div class="alpacino">
+  <h2 style="text-align: center;">Al Pacino</h2>
+  <div class="cylinder"></div>
+  <div class="container-fluid d-flex justify-content-around ">
+    <div class="image">
+      <img src="../../assets/al1.jpeg" alt="" width="300">
+      <div class="overlay">
+        <p style="text-align: center;">from the set of The Godfather  <br> 1972</p>
+      </div>
+    </div>
+    <div class="info mt-5" style="font-weight: 600;" >
+      
+        Al Pacino is widely regarded as one of the greatest and most influential actors in the history of cinema. Born in New York City in 1940, he rose from a modest upbringing in the Bronx to become a legendary figure in both film and theater. His breakthrough came in the early 1970s when he portrayed Michael Corleone in The Godfather trilogy, a role that would define his career and showcase his extraordinary talent for portraying complex, conflicted characters. Throughout the decades, Pacino captivated audiences with unforgettable performances in critically acclaimed films such as Scarface, Serpico, Dog Day Afternoon, Heat, and Scent of a Woman, for which he won the Academy Award for Best Actor. Known for his intense screen presence, passionate delivery, and distinctive voice, Pacino brings a raw emotional depth to every role he plays. Beyond his success in film, he has remained deeply connected to the stage, earning Tony Awards for his theatrical performances and continuing to act in and direct plays. His dedication to his craft, his fearless exploration of human emotion, and his ability to disappear into his roles have made him a lasting icon of American acting. Even after more than fifty years in the industry, Al Pacino continues to inspire new generations of actors and filmmakers around the world. <br> <br>
+        More info at <a href="https://en.wikipedia.org/wiki/Al_Pacino" target="_blank">wiki</a>
+        <hr>
+    </div> 
+  </div>
+  <hr>
+
+  <div class="movies my-5">
+
+    <div class="container my-5">
+  <h2 class="mb-4">Popular Movies</h2>
+  <div class="row g-4">
+    <div class="col-md-4" *ngFor="let movie of movies">
+      <div class="card h-100">
+        <img 
+          [src]="movie.image" 
+          class="card-img-top" 
+          [alt]="movie.name"
+          style="cursor: pointer;"
+          (click)="playVideo(movie.videoId)">
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.name }}</h5>
+          <p class="card-text">
+            Year: {{ movie.year }}<br>
+            Director: {{ movie.director }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Embedd the videoooooooo -->
+   
+  <div class="mt-5" *ngIf="selectedVideoId">
+    <div class="ratio ratio-16x9">
+      <iframe width="679" height="382" [src]="'https://www.youtube.com/embed/' + selectedVideoId | safe" title="Scent of a Woman (1992) - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="cylinder"></div>
+
+<h2 style="text-align: center;" class="my-4">Robert De Niro</h2>
+
+
+<div class="deniro container d-flex justify-content-around">
+  <div class="image img-wrapper">
+    <img src="../../assets/de2.jpeg" alt="" class="mt-3" />
+    <div class="overlay">
+      <p>Robert De Niro</p>
+    </div>
+  </div>
+  <div class="info">
+    <p style="font-weight: 600;">
+      Robert De Niro is widely celebrated as one of the most accomplished and versatile actors in the history of cinema. Born in New York City in 1943, De Niro grew up immersed in the rich cultural and artistic environment of Manhattan, which would go on to shape his lifelong dedication to the craft of acting. He studied at the Stella Adler Conservatory and later at Lee Strasberg’s Actors Studio, where he adopted method acting techniques that would come to define his intensely transformative performances. De Niro first gained attention for his work in the early 1970s, particularly through his collaborations with director Martin Scorsese. His breakout role in Mean Streets (1973) was followed by a legendary performance in The Godfather Part II (1974), for which he won the Academy Award for Best Supporting Actor. De Niro's ability to fully embody his characters was most famously showcased in Raging Bull (1980), where he underwent a dramatic physical transformation to portray boxer Jake LaMotta — a role that earned him the Oscar for Best Actor and solidified his reputation as a master of his craft.
+
+Throughout his career, De Niro has consistently chosen roles that challenge and expand the boundaries of traditional acting. His filmography includes iconic performances in Taxi Driver, The Deer Hunter, Goodfellas, Casino, and Heat, among others. Known for his quiet intensity, piercing gaze, and commitment to authenticity, De Niro often dives deep into the psychological and emotional complexities of his characters. Beyond his dramatic work, he has also shown a flair for comedy in films like Meet the Parents and The Intern, proving his range and longevity as a performer. In addition to acting, De Niro has made significant contributions to film as a producer and director, co-founding the Tribeca Film Festival to revitalize lower Manhattan after 9/11. His impact on American cinema is immeasurable, and his dedication to storytelling, both in front of and behind the camera, continues to inspire generations of artists around the world. <br> <br>
+see more at <a href="https://en.wikipedia.org/wiki/Robert_De_Niro">wiki</a>
+    </p>
+    <hr>
+  </div>
+</div>
+
+<hr>
+
+
+<div class="movies">
+
+  <h2 class="ms-4">Popular movies</h2>
+
+  <div class="container my-5">
+  <h2 class="mb-4">Popular Movies</h2>
+  <div class="row g-4">
+    <div class="col-md-4" *ngFor="let movie of movies2">
+      <div class="card h-100">
+        <img 
+          [src]="movie.image" 
+          class="card-img-top" 
+          [alt]="movie.title"
+          style="cursor: pointer;"
+          (click)="playVideo(movie.videoUrl)">
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.title }}</h5>
+          <p class="card-text">
+            Year: {{ movie.year }}<br>
+            Director: {{ movie.director }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Embedd the videoooooooo -->
+   
+  <div class="mt-5" *ngIf="selectedVideoId">
+    <div class="ratio ratio-16x9">
+      <iframe width="679" height="382" [src]="'https://www.youtube.com/embed/' + selectedVideoId | safe" title="Scent of a Woman (1992) - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+
+
+
+  
+
+
+
+
+  </div>
+
+
+
+<footer class="bg-dark text-white py-3 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+
+   
+    <p class="mb-2 mb-md-0">&copy; 2025 Adham Yousef</p>
+
+    
+    <a href="https://www.instagram.com/adhamyoussiff/" target="_blank" class="footer-link me-3">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+
+    
+    <a href="mailto:adhamstar1@gmail.com" class="footer-link me-3">
+      <i class="fas fa-envelope"></i> Contact
+    </a>
+
+   
+    <p class="mb-0"><i class="fas fa-phone"></i> 01099285874</p>
+
+  </div>
+</footer>
+

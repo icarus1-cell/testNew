@@ -1,0 +1,37 @@
+body {
+  background-color: #111;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+}
+
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff4d4d; 
+}
+
+footer p {
+  margin: 0;
+}

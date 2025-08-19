@@ -1,0 +1,180 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    font-size:40px ;
+
+}
+
+p{
+    text-align: center;
+    font-size: larger;
+    
+}
+
+
+.cylinder{
+    width: 90%;
+    height: 10px;
+    background-color: red;
+    margin: auto;
+    border-radius:50px ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.data{
+
+    
+    width: 400px;
+    height: 400px;
+
+    font-weight: 500;
+
+}
+
+
+
+.photo1 {
+  width: 300px; 
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.image-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none; 
+}
+
+.image-wrapper .overlay-text {
+  color: white;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.1);
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.image-wrapper:hover .overlay-text {
+  opacity: 1;
+}
+
+
+
+.origin{
+
+
+    
+
+    height: 500px;
+    width: 95%;
+    margin: auto;
+    margin-left:80px;
+}
+
+.origindata{
+
+    height: 100%;
+    width: 45%;
+    
+
+    font-weight: 500;
+}
+
+.image-container{
+
+    height: 100%;
+    width: 45%;
+    position: relative;
+  overflow: hidden;
+    
+
+}
+
+.originphoto {
+  width: 100%;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.image-container:hover .originphoto {
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.image-container:hover .overlay-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff4d4d; 
+}
+
+footer p {
+  margin: 0;
+}

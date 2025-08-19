@@ -1,0 +1,123 @@
+.para{
+    width: 80%;
+    margin: auto;
+    font-size: large;
+    font-weight: 600;
+}
+
+.cylinder{
+    width: 90%;
+    height: 10px;
+    background-color: red;
+    margin: auto;
+    border-radius:50px ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.image {
+  position: relative;
+  width: 300px; 
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.overlay p {
+  color: white;
+  font-size: 1.2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  text-align: center;
+  margin: 0;
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+
+.image:hover .overlay p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.info {
+  max-width: 600px;
+  padding-left: 20px;
+  text-align: justify;
+}
+
+
+
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;         
+  border-radius: 8px;       
+  max-width: 100%;          
+}
+
+.img-wrapper img {
+  display: block;
+  width: 100%;              
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.img-wrapper:hover img {
+  transform: scale(1.1);    
+}
+
+.img-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+       
+}
+
+.img-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff4d4d; 
+}
+
+footer p {
+  margin: 0;
+}
